@@ -69,7 +69,7 @@ html, body
 	<div id="main">
 		<center style="margin-bottom:10px">A bad clicker game</center>
 		<center><canvas id="canvas" width="800" height="600" style="max-width:100%;background:#000;vertical-align:middle"></canvas></center>
-		<button id="fullscreen" class="gamebutton">Fullscreen</button>
+		<button id="fullscreen" onclick="canvas.width = document.body.clientWidth; canvas.height = document.body.clientHeight" class="gamebutton">Fullscreen</button>
 	</div>
 </div>
 <div id="footer">Made using the <a href="https://love2d.org/" target="_blank">LÖVE Framework</a> (<a href="https://bitbucket.org/rude/love/raw/default/license.txt" target="_blank">License</a>) &middot; Packaged using <a href="https://schellingb.github.io/LoveWebBuilder/" target="_blank">LÖVE Web Builder</a></div>
