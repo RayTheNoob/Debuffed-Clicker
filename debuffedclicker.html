@@ -72,10 +72,10 @@ html, body
 <script type="text/javascript">(function(){
 var TXT =
 {
-	PLAYBTN: 'Click here to launch the game',
-	LOAD:    'Downloading Game',
-	PARSE:   'Preparing Game',
-	EXECUTE: 'Starting Game',
+	PLAYBTN: 'Click here to play!',
+	LOAD:    'Loading (1/3)',
+	PARSE:   'Loading (2/3)',
+	EXECUTE: 'Loading (3/3)',
 	DLERROR: 'Error while downloading game data.\nCheck your internet connection.',
 	NOWEBGL: 'Your browser or graphics card does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>.<br>Find out how to get it <a href="http://get.webgl.org/">here</a>.',
 };
@@ -110,7 +110,7 @@ var DoLoad = function()
 {
 	Msg(TXT.LOAD);
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'debuffedclicker.js');
+	xhr.open('GET', 'https://github.com/RayTheNoob/Debuffed-Clicker/raw/main/debuffedclicker.js');
 	xhr.onprogress = function(e)
 	{
 		if (!e.lengthComputable || ctx.pCnt++ < 5) return;
