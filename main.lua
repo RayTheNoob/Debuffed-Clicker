@@ -1,7 +1,90 @@
+dev = false
+devops={}
+--preset table index to be shown in add when C is pressed
+devops.c = 23
+icons = {}
+iconText = {
+--1 mouse
+{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+--2 memo
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, },
+
+--3 ice
+{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, },
+
+--4 mystery box
+{0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, },
+
+--5 water
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+--6 gold
+{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, },
+
+--7 theif
+{0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, },
+
+--8 badge
+{0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, },
+
+--9 circle 1/4
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+
+--10 face 1
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+--11 face 2
+{0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+--12 face 3
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, },
+
+--13 face 4
+{0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, },
+
+--14 face 5
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+
+--15 face 6
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, },
+
+--16 face 7
+{0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, },
+
+--17 clock
+{0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, },
+}
+for i=1,#iconText do
+	local ic = love.graphics.newCanvas(16,16)
+	px = 0
+	py = 1
+	ic:renderTo(function()
+	for j=1,16*16 do
+		if (iconText[i])[j] == 1 then
+			love.graphics.setColor(1,1,1)
+		else
+			love.graphics.setColor(1,1,1,0)
+		end
+		love.graphics.points(px,py)
+		px = px + 1
+		if px>15 then
+			px = 0
+			py = py + 1
+		end
+	end
+	end);
+		love.graphics.circle("fill",0,0,i*3)
+		love.graphics.flushBatch()
+	ic:setFilter("nearest","nearest")
+	table.insert(icons, ic)
+end
 frame = 0
 love.window.setTitle("Clicker Game")
 countDownTime = {60*9000,60*22,60*10,60*6.5,60*4.5,60*2.5,4}
-difficultyNames = {"Not Even Fun","Baby", "EZ","Normal","Harder","Hard","Imposible"}
+difficultyNames = {"Not Even Fun","Baby", "EZ","Normal","Hard","Harder","Imposible"}
+difficultyFaces = {10,11,12,13,14,15,16}
 difficulty = 4
 fade = nil
 fade = love.graphics.newCanvas(1,love.graphics.getHeight()/2)
@@ -22,6 +105,8 @@ fadeC:renderTo(function()
 		love.graphics.setLineWidth(i-rings)
 	end
 end)
+resetOpacity = 0
+if dev then print("Dev mode on!") end
 function love.load()
 	gameover = false--
 	gameStarted = false
@@ -45,26 +130,29 @@ function love.load()
 	nerfGroup = 1
 	buffGroup = 1
 	onBuyButton=false
+	gameoverstarteatframe = 0
 	screenScale = 0
+	flashOpacity = 0
 	--for i=1,16 do table.insert(nerfs,{name="",group="blank"})
-	nerfs[2] = {name="Welcome!",effect=2,group="memo",time=60*3.5,delete=true}
-	nerfs[1] = {name="Time Freeze",effect=2,new=true,buff=true,group="freeze"}
-	nerfs[3] = {name="Click circle to start. Hold 'R' to reset.",effect=2,new=true,buff=false,group="memo"}
-	nerfs[4] = {name="Buffs are effects that help you out.",effect=2,group="memo"}
-	nerfs[5] = {name="Nerfs are effects that hurt you!",effect=2,group="memo"}
-	nerfs[6] = {name="Temporary effects (marked with 'Temp') wear off over time.",effect=2,group="memo"}
-	nerfs[7] = {name="Each time the timer in the corner runs out, a new nerf is added!",effect=2,group="memo"}
-	nerfs[8] = {name="Look out for the ads that show up in the bottom.",effect=2,group="memo"}
-	nerfs[9] = {name="They can sell buffs that help you out.",effect=2,group="memo"}
-	nerfs[10] = {name="If you have enough points, you can purchase items with space bar.",effect=2,group="memo"}
-	nerfs[12] = {name="If you get to 0 points, you lose!",effect=2,group="memo"}
+	nerfs[2] = {name="Welcome!",effect=2,group="memo",time=60*3.5,delete=true,icon=2}
+	nerfs[1] = {name="Time Freeze",effect=2,new=true,buff=true,group="freeze",icon=3}
+	nerfs[3] = {name="Click circle to start. Hold 'R' to reset.",effect=2,new=true,buff=false,group="memo",icon=2}
+	nerfs[4] = {name="Buffs are effects that help you out.",effect=2,group="memo",icon=2}
+	nerfs[5] = {name="Nerfs are effects that hurt you!",effect=2,group="memo",icon=2}
+	nerfs[6] = {name="Temporary effects (marked with 'Temp') wear off over time.",effect=2,group="memo",icon=2}
+	nerfs[7] = {name="Each time the timer in the corner runs out, a new nerf is added!",effect=2,group="memo",icon=2}
+	nerfs[8] = {name="Look out for the ads that show up in the bottom.",effect=2,group="memo",icon=2}
+	nerfs[9] = {name="They can sell buffs that help you out.",effect=2,group="memo",icon=2}
+	nerfs[10] = {name="If you have enough points, you can purchase items with space bar.",effect=2,group="memo",icon=2}
+	nerfs[12] = {name="If you get to 0 points, you lose!",effect=2,group="memo",icon=2}
 	nerfs[13] = {name="",group="blank",effect=2}
 	nerfs[14] = {name="",group="blank",effect=2}
 	nerfs[15] = {name="",group="blank",effect=2}
 	nerfs[16] = {name="",group="blank",effect=2}
 	nerfs[11] = {name="",group="blank",effect=2}
 	buttonOffset={x=0,y=0}
-	bmemo = "Currently untitled clicker game build 3"
+	bmemo = "Debuffed Clicker 0.6 (10/12/23)"
+	if dev then bmemo = bmemo.." (dev mode on)" end
 	timeToNerf = nerfCountdown
 	love.graphics.setBackgroundColor(50/255, 151/255, 168/255)
 	circleSize = 100
@@ -87,50 +175,78 @@ end
 function buttonStencil()
 	love.graphics.circle("fill",love.graphics.getWidth()/2+buttonOffset.x, love.graphics.getHeight()/2+buttonOffset.y,circleSize)
 end
-
+function gameOverStencil()
+	love.graphics.ellipse("fill",love.graphics.getWidth()/2,love.graphics.getHeight()/2,gameoverstarteatframe*3,gameoverstarteatframe*3,8)
+end
 function love.update()
+	if love.keyboard.isDown('c') and dev then
+		currentAd = presets[devops.c]
+		adsShowable =true
+		adLifespan = 10*60
+		if currentAd.price == nil then currentAd.price = 0 end
+		if currentAd.price > clicks then
+			clicks = clicks + 1 + currentAd.price
+		end
+		if currentAd.desc == nil then currentAd.desc = "(No description)" end
+	end
 	local trash = love.math.random(1,512)
 	presets = {}
 
-	presets[1] = {name="Very Tiny Leak",nerf=true,buff=false,group="leak",effect=1,option1=120,option2=-3,addableAt=1,real=true,time=60*7.5}
+	presets[1] = {name="Very Tiny Leak",nerf=true,buff=false,group="leak",effect=1,option1=120,option2=-3,addableAt=1,real=true,time=60*7.5,icon=5}
 
 	presets[2] = {name="El Cheapo Wrench",buff=true,group="wrench",effect=3,option1="leak",option2=0,time=60*9,desc="A flimsy wrench that fixes all leaks.",price=99,byableAt=1,real=true}
 
 	presets[3] = {name="Hacker AutoClicker",buff=true,group="clicker",effect=1,option1=1,option2=4096*4,desc="The only way to get this is by cheating, it is is a little bit overpowered.",price=115,real=true}
 
-	presets[4] = {name="Thief",nerf=true,effect=1,option1=8,option2=-1,time=28*6,group="thief"}
+	presets[4] = {name="Thief",nerf=true,effect=1,option1=8,option2=-1,time=28*6,group="thief",icon=7}
 
-	presets[5] = {name="Part-time Cop",buff=true,effect=3,option1="thief",option2=-4,time=500,price=125,desc="A part time cop that swiftly arrests all thieves, but charges a small fee",group="cop"}
+	presets[5] = {name="Part-time Cop",buff=true,effect=3,option1="thief",option2=-4,time=500,price=125,desc="A part time cop that swiftly arrests all thieves, but charges a small fee",group="cop",icon=8}
 
-	presets[6] = {name="Tiny Leak", nerf = true,group="leak",effect=1,option1=60,option2=-1}
+	presets[6] = {name="Tiny Leak", nerf = true,group="leak",effect=1,option1=60,option2=-1,icon=5}
 
-	presets[7] = {name="Basic Autoclicker",buff=true,group="clicker",effect=1,option1=10,option2=1,price=115,time=10*135,desc="Autoclicker that slowly click the button for you."}
+	presets[7] = {name="Basic Autoclicker",buff=true,group="clicker",effect=1,option1=10,option2=1,price=115,time=10*135,desc="Autoclicker that slowly click the button for you.",icon=1}
 
-	presets[8] = {name="Leak",nerf=true,group="leak",effect=1,option1=55,option2=-1}
+	presets[8] = {name="Leak",nerf=true,group="leak",effect=1,option1=55,option2=-1,icon=5}
 
-	presets[9] = {name="Timer speedup",nerf=true,group="misc",effect=4,option1=-1,time=60*14}
+	presets[9] = {name="Timer speedup",nerf=true,group="misc",effect=4,option1=-1,time=60*14,icon=17}
 
 	presets[10] = {name="Small Anti-Freeze",nerf=true,group="antifreeze",effect=3,option1="freeze",option2=0,time=60*4}
 
-	presets[11] = {name="Better AutoClicker",buff=true,group=clicker,option1=10,option2=2,price=115,time=10*135,desc="Autoclicker that slowly click the button for you.",price=259}
+	presets[11] = {name="Better AutoClicker",buff=true,group="clicker",effect=1,option1=10,option2=2,price=115,time=10*135,desc="Autoclicker that slowly click the button for you.",price=259}
 
 	presets[12] = {name="Ice Cube",buff=true,group="freeze",effect=4,option1=1,time=60*8,desc="An ice cube that freezes the timer but melts quickly.",price=199}
 
-	presets[13] = {name="Cop",buff=true,group="cop",effect=3,option1="thief",option2=0,price=339,desc="A cop that arrests thieves.",time=60*40}
+	presets[13] = {name="Cop",buff=true,group="cop",effect=3,option1="thief",option2=0,price=325,desc="A cop that arrests thieves.",time=60*45,icon=8}
 
-	presets[14] = {name="Mystery Box",buff=true,group="misc",effect=0,price=375,desc="A super cool mystery box you don't want to miss out on! Who know what it will do or what is inside! Better find out!"}
+	presets[14] = {name="Mystery Box",buff=true,group="misc",effect=0,price=375,desc="A super cool mystery box you don't want to miss out on! Who know what it will do or what is inside! Better find out!",icon=4}
 
-	presets[15] = {name="Toilet Paper Rolls",group="tp",effect=0,price=19,desc="If you stock up on these now, you can sell them when the price goes up!"}
+	presets[15] = {name="Toilet Paper Rolls",group="tp",sellable=true,effect=0,price=19,desc="If you stock up on these now, you can sell them when the price goes up!"}
+
+	presets[16] = {name="Less Cheap Wrench",buff=true,group="wrench",effect=3,option1="leak",option2=0,time=60*45,desc="A more durable wrench that fixes all leaks.",price=299}
+
+	presets[17] = {name="Big Ice Cube",buff=true,group="freeze",effect=4,option1=1,time=60*26,desc="An long lasting ice cube that freezes the timer..",price=359,icon=3}
+
+	presets[18] = {name="Penulum",nerf=true,group="move",effect=5,option1=1}
+
+	presets[19] = {name="Virus",group="virus",effect=6,option1=60,option2=19}
+
+	presets[20] = {name="Gold Bar",group="gold",sellable=true,effect=0,icon=6}
+
+	presets[21] = {name="Cheap Gold Mine",group="misc",buff=true,effect=6,option1=5,option2=20,time=60*15,desc="A small gold mine that mines gold.",price=175}
+
+	presets[22] = {name="Gold Buyer",group="buy",buff=true,effect=3,option1="gold",option2=150,time=120,price=0,desc="Will buy gold."}
+
+	presets[23] = {name="Sneaky Theif",group="theif",nerf=true,effect=1,option1=1,option2=-1,time=100,price=30,icon=7,desc="A sneaky theirf that hides their face with a ski mask. Will steal from you!"}
 
 	--------------------------------------------------
 	nerfSpawns = {
 		{presets[1],presets[1],presets[4],presets[1]},
-		{presets[9],presets[8],presets[4],presets[6],presets[10],presets[8]},		
+		{presets[9],presets[8],presets[23],presets[6],presets[10],presets[8]},		
 	}
 
 	adSpawns = {
-		{presets[2],presets[2],presets[5],presets[7],presets[15]},
-		{presets[2],presets[12],presets[13],presets[7],presets[11],presets[14],presets[15],}
+		{presets[2],presets[2],presets[5],presets[7],presets[15],presets[21],presets[23]},
+		{presets[12],presets[13],presets[7],presets[11],presets[14],presets[15],presets[16]}
 	}
 	--print( (nerfSpawns[1])[1].time )
 	--print( (presets[1].time ) )
@@ -141,6 +257,7 @@ function love.update()
 	frame = frame + 1
 	--nerfs[1] = {name="Basic AutoClicker",buff=true,group="clicker",effect=1,option1=1,option2=-8,desc="A basic autoclicker that will click for you.",time=265,price=115,buyableAt=2}
 	timeToNerf = timeToNerf - 1
+	if timeToNerf > nerfCountdown then timeToNerf = nerfCountdown end
 
 	---------------------------------------
 	nerfCountdown = countDownTime[difficulty]
@@ -152,13 +269,13 @@ function love.update()
 	if buffGroup == 1 and clicks > 375 then
 		buffGroup = 2
 	end
-
+	flashOpacity = flashOpacity - 0.01
 	if timeToNerf < 1 then
 		nerfsAdded = nerfsAdded + 1
 
 		timeToNerf = nerfCountdown
 		adsShowable = true
-
+		flashOpacity = 0.2
 		--table.insert(nerfs, presets[(nerfSpawns[1])[love.math.random(1,3)]] )
 		local insert = (nerfSpawns[nerfGroup])[math.random(1,#nerfSpawns[nerfGroup])]
 		table.insert(nerfs, insert)
@@ -197,11 +314,15 @@ function love.update()
 	if love.keyboard.isDown("r") then
 		rframes = rframes + 2
 	else rframes = rframes - 2 end
-	if rframes > 120 then love.load() end
+	if rframes > 120 then love.load(); resetOpacity = 2 end
 	rframes = math.clamp(0, rframes, 200)
 	nerfCountdown = startingNerfCountdown
 
 	if clicks == 0 then gameover = true end
+	if gameover then gameoverstarteatframe = gameoverstarteatframe + 1 end
+	
+
+	buttonOffset={x=0,y=0}
 
 	if not gameover then
 		doNerfs()
@@ -213,10 +334,11 @@ function love.update()
 	end
 
 	cleanTable()
-	if #nerfs > 16 then
-		table.remove(nerfs,1)
+	for i=1,#nerfs+1 do
+		if #nerfs > 16 then
+			table.remove(nerfs,1)
+		end
 	end
-
 	table.insert(mouseTrail,{love.mouse.getX(),love.mouse.getY()})
 	if #mouseTrail > 25 then table.remove(mouseTrail,1) end
 
@@ -230,6 +352,11 @@ function love.draw()
 		--doNerfs()
 
 		bg()
+		if flashOpacity > 0 then
+			love.graphics.setColor(1,1,1,flashOpacity)
+			love.graphics.rectangle("fill",0,0,love.graphics.getWidth(),love.graphics.getHeight())
+			love.graphics.setColor(1,1,1)
+		end
         dist = math.sqrt( ((love.mouse.getX()-(love.graphics.getWidth()/2+buttonOffset.x))^2) + ((love.mouse.getY()-(love.graphics.getHeight()/2+buttonOffset.y))^2) )
         love.graphics.setColor(1,1,1)
 
@@ -287,28 +414,47 @@ love.graphics.arc("fill",love.graphics.getWidth()-40,love.graphics.getHeight()-4
 		love.graphics.print("Current Effects:")
 
 		for i=1,#nerfs do
-			local outprint = "["
+			local outprint = "    ["
 			if nerfs[i].nerf then outprint = outprint .. "Nerf" end
 			if nerfs[i].buff then outprint = outprint .. "Buff" end
+			if nerfs[i].sellable then outprint = outprint .. "Sellable" end
 			if nerfs[i].group == "memo" then outprint = outprint .. "Memo" end
 			if nerfs[i].time ~= nil then outprint = outprint .. ", Temp" end
 			outprint = outprint .. "] " .. nerfs[i].name
-
+			if nerfs[i].icon ~= nil then
+				love.graphics.setColor(0,0,0,0.5)
+				--love.graphics.setColor(1,1,1,0.25)
+				love.graphics.draw(icons[nerfs[i].icon],2,i*25+1,0,1)
+				love.graphics.setColor(1,1,1)
+				love.graphics.draw(icons[nerfs[i].icon],1,i*25,0,1)
+			end
 
 			love.graphics.print(outprint,0,i*25)
 		end
 		if currentAd.name ~= nil then
 			--print(currentAd.name)
-			love.graphics.printf( currentAd.name, font, math.floor(love.graphics.getWidth()/2), love.graphics.getHeight()-100, font:getWidth(currentAd.name), "center", nil, nil, nil, font:getWidth(currentAd.name)/2)
+			if currentAd.icon ~= nil then
+				love.graphics.setColor(0,0,0,0.5)
+				love.graphics.draw(icons[currentAd.icon],math.floor(love.graphics.getWidth()/2)-font:getWidth(currentAd.name)/2+3,love.graphics.getHeight()-92+3,0,math.sin(frame/10)/2+2,nil,8,8)
+				love.graphics.setColor(1,1,1)
+				love.graphics.draw(icons[currentAd.icon],math.floor(love.graphics.getWidth()/2)-font:getWidth(currentAd.name)/2,love.graphics.getHeight()-92,0,math.sin(frame/10)/2+2,nil,8,8)
+			end
+			love.graphics.printf( currentAd.name, font, math.floor(love.graphics.getWidth()/2)+32, love.graphics.getHeight()-100, font:getWidth(currentAd.name), "center", nil, nil, nil, font:getWidth(currentAd.name)/2)
 
-			love.graphics.print("For Sale! ("..currentAd.price.." points)",math.floor((love.graphics.getWidth()/2)-(font:getWidth(currentAd.name)/2)),love.graphics.getHeight()-150)
+			if currentAd.price ~= nil then love.graphics.print("For Sale! ("..currentAd.price.." points)",math.floor((love.graphics.getWidth()/2)-(font:getWidth(currentAd.name)/2)),love.graphics.getHeight()-150) end
 
 	love.graphics.print("Press spacebar to buy! ("..math.floor(adLifespan/60).." secs left)",math.floor((love.graphics.getWidth()/2)-(font:getWidth(currentAd.name)/2)),love.graphics.getHeight()-125)
 
-			love.graphics.printf( currentAd.desc, math.floor(love.graphics.getWidth()/2), love.graphics.getHeight()-70, math.floor(font:getWidth(currentAd.name)), "center", nil, nil, nil, math.floor(font:getWidth(currentAd.name)/2))
+			if currentAd.desc ~= nil then love.graphics.printf( currentAd.desc, math.floor(love.graphics.getWidth()/2), love.graphics.getHeight()-70, math.floor(font:getWidth(currentAd.name)), "center", nil, nil, nil, math.floor(font:getWidth(currentAd.name)/2)) end
 
 			love.graphics.setColor(1,1,1,0.5)
 			--love.graphics.rectangle("fill",math.floor((love.graphics.getWidth()/2)-font:getWidth(currentAd.name)/2),love.graphics.getHeight()-100,(love.graphics.getWidth()/2)-font:getWidth(currentAd.name),1000)
+		end
+
+		if resetOpacity > 0 then
+			love.graphics.setColor(1,1,1,resetOpacity)
+			love.graphics.print("Reset",font,love.graphics.getWidth()-font:getWidth("Reset")-10,25)
+			resetOpacity = resetOpacity - 0.01
 		end
 
 	love.graphics.setColor(0,0,0)
@@ -329,7 +475,6 @@ love.graphics.arc("fill",love.graphics.getWidth()-40,love.graphics.getHeight()-4
 		love.graphics.print("Buy",love.mouse.getX()+15,love.mouse.getY()-5)
 	end
 
-	love.graphics.setPointSize(5)
 	for i=1,#mouseTrail-1 do
 		if (mouseTrail[i])[1] ~= -1 then
 		love.graphics.setLineWidth((5/#mouseTrail)*i)
@@ -339,14 +484,28 @@ love.graphics.arc("fill",love.graphics.getWidth()-40,love.graphics.getHeight()-4
 	end end
 	love.graphics.setLineWidth(2)
 
+	love.graphics.stencil(gameOverStencil, "replace", 1)
+    love.graphics.setStencilTest("greater", 0)
+
 	if gameover then
-		love.graphics.setColor(0,0,0,0.5)
-		love.graphics.rectangle("fill",0,0,love.graphics.getWidth(),love.graphics.getHeight())
+		love.graphics.setColor(0,0,0,0.05)
+		for i=1,10 do
+			local o = i*math.abs(math.sin(frame/200)*15)
+			love.graphics.rectangle("fill",0+o,0+o,love.graphics.getWidth()-o*2,love.graphics.getHeight()-o*2)
+		end
 		love.graphics.setColor(1,0,0)
 		love.graphics.printf("Game Over",font,(love.graphics.getWidth()/2)-(font:getWidth("Game Over")/2),love.graphics.getHeight()/2,font:getWidth("Game Over"),"center")
-		love.graphics.printf("Hold 'R'",font,(love.graphics.getWidth()/2)-(font:getWidth("Hold 'R'")/2),love.graphics.getHeight()/2+100,font:getWidth("Hold 'R'"),"center")
+		love.graphics.printf("Hold 'R'",font,(love.graphics.getWidth()/2)-(font:getWidth("Starting New Game")/2),love.graphics.getHeight()/2+100,font:getWidth("Starting New Game"),"center")
 	end
+	love.graphics.setStencilTest()
 	if not gameStarted then
+		love.graphics.setColor(1,1,1,0.5)
+		love.graphics.circle("fill",love.graphics.getWidth()/2,love.graphics.getHeight()-215,27)
+		love.graphics.setColor(1,1,1)
+		for i=1,4 do
+			love.graphics.draw(icons[9],love.graphics.getWidth()/2,love.graphics.getHeight()-215,math.pi*(i/2),2,2,14,14)
+		end
+		love.graphics.draw(icons[difficultyFaces[difficulty]],love.graphics.getWidth()/2,love.graphics.getHeight()-215,nil,2,2,8,8)
 		local m = "Use keys 1-"..#countDownTime.." to pick difficulty"
 		love.graphics.print(m,font,love.graphics.getWidth()/2,(love.graphics.getHeight()/4)*3,nil,nil,nil,font:getWidth(m)/2)
 		m = "Current Difficulty("..difficulty.."): "..difficultyNames[difficulty]
@@ -408,6 +567,9 @@ function math.clamp(low, n, high) return math.min(math.max(low, n), high) end
 		opt1(numb): Change timer by X
 
 
+	5: move
+
+	6: spawn preset X every Y frames
 --]]
 
 function doNerfs()
@@ -442,6 +604,26 @@ function doNerfs()
 			end
 		elseif nerfs[i].effect == 4 then
 			timeToNerf = timeToNerf + nerfs[i].option1
+		elseif nerfs[i].effect == 5 then
+				if nerfs[i].option1 == 0 then
+					buttonOffset={x=math.sin(frame/50)*love.graphics.getWidth()/2,y=math.abs(math.cos(frame/50)*love.graphics.getHeight()/4)}
+				elseif nerfs[i].option1 == 2 then
+					buttonOffset={x=math.sin(frame/50)*love.graphics.getWidth()/3,y=math.cos(frame/50)*love.graphics.getWidth()/3}
+				elseif nerfs[i].option1 == 3 then
+					buttonOffset={x=0,y=frame*2%love.graphics.getHeight()*2-love.graphics.getHeight()}
+				elseif nerfs[i].option1 == 4 then
+					buttonOffset={x=love.graphics.getWidth(),y=0}
+				elseif nerfs[i].option1 == 5 then
+					buttonOffset={x=love.mouse.getX()-love.graphics.getWidth()/2,y=love.mouse.getY()-love.graphics.getHeight()/2}
+				elseif nerfs[i].option1 == 6 then
+					buttonOffset={x=love.mouse.getX()-love.graphics.getWidth()/2,y=love.mouse.getY()-love.graphics.getHeight()/2+circleSize}
+				elseif nerfs[i].option1 == 1 then
+					buttonOffset={x=love.mouse.getX()*-1+love.graphics.getWidth()/2,y=love.mouse.getY()*-1+love.graphics.getHeight()/2}
+				end
+		elseif nerfs[i].effect == 6 then
+			if frame % nerfs[i].option1 == 0 then
+				table.insert(nerfs,presets[nerfs[i].option2])
+			end
 		end
 
 		if nerfs[i].time ~= nil then
@@ -474,4 +656,5 @@ function cleanTable()
 		table.insert(nerfs,{name="",group="blank",time=nil})
 	end
 end
+
 end
