@@ -73,7 +73,7 @@ canvas {
 </head>
 <body>
 <div id="wrapper">
-	<h1 id="title">Debuffed Clicker (0.4)</h1>
+	<h1 id="title">Debuffed Clicker</h1>
 	<div id="main">
 		<center style="margin-bottom:10px">A bad clicker game</center>
 		<center><canvas id="canvas" width="800" height="600" style="max-width:100%;background:#000;vertical-align:middle"></canvas></center>
@@ -86,7 +86,7 @@ var TXT =
 	PLAYBTN: 'Click here to play!',
 	LOAD:    'Downloading...',
 	EXECUTE: 'Loading...',
-	DLERROR: 'Error while downloading game data.\nCheck your internet connection and try again.',
+	DLERROR: 'Error while downloading game data.\nCheck your internet connection and try again.\nGame file link could be invalid',
 	NOWEBGL: 'Your browser or graphics card does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>.<br>Find out how to get it <a href="http://get.webgl.org/">here</a>.',
 };
 var canvas = document.getElementById('canvas'), ctx;
@@ -122,7 +122,7 @@ var DoLoad = function()
 	window.onerror = function(e,u,l) { Fail(e+'<br>('+u+':'+l+')'); };
 	Module = { TOTAL_MEMORY: 1024*1024*24, TOTAL_STACK: 1024*1024*2, currentScriptUrl: '-', preInit: DoExecute };
 	var s = document.createElement('script'), d = document.documentElement;
-	s.src = 'debuffedclicker.js';
+	s.src = prompt("Enter link to game file. If unsure, do not edit anything and press Enter",'debuffedclicker.js');
 	s.async = true;
 	s.onerror = function(e) { d.removeChild(s); Msg(TXT.DLERROR); canvas.disabled = false; };
 	d.appendChild(s);
